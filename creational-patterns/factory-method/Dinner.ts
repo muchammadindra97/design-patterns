@@ -1,9 +1,9 @@
-import {Kitchen} from "./Kitchen";
 import {IMeal} from "./IMeal";
 import {SataiAyam} from "./SataiAyam";
+import {Food} from "./Food";
 
-export class Dinner extends Kitchen {
-    serveMeal(): IMeal {
+export class Dinner extends Food {
+    createMeal(): IMeal {
         return new SataiAyam();
     }
 }
